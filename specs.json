@@ -1,0 +1,14 @@
+{
+    "public_root": "./www",
+    "resource_path": "./www",
+    "specs": [
+        {
+            "title": "New Zealand Covid Pass Specification",
+            "output_path": "./www",
+            "spec_directory": "./spec",
+            "markdown_paths": [
+                "main.md"
+            ]
+        }
+    ]
+}

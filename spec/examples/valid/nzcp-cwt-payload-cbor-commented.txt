@@ -1,0 +1,53 @@
+  a5                -- Map, 5 pairs
+    01              -- {Key:0}, 1
+    78              -- String, length next 1 byte
+      1e            -- String, length: 30
+        6469643a7765623a6e7a63702e636f76696431392e6865616c74682e6e7a -- {Val:0}, "did:web:nzcp.covid19.health.nz"
+    05              -- {Key:1}, 5
+    1a              -- Positive number, next 4 bytes
+      61819a0a      -- {Val:1}, 1635883530
+    04              -- {Key:2}, 4
+    1a              -- Positive number, next 4 bytes
+      7450400a      -- {Val:2}, 1951416330
+    62              -- String, length: 2
+      7663          -- {Key:3}, "vc"
+    a4              -- {Val:3}, Map, 4 pairs
+      68            -- String, length: 8
+        40636f6e74657874 -- {Key:0}, "@context"
+      82            -- {Val:0}, Array, 2 items
+        78          -- String, length next 1 byte
+          26        -- String, length: 38
+            68747470733a2f2f7777772e77332e6f72672f323031382f63726564656e7469616c732f7631 -- [0], "https://www.w3.org/2018/credentials/v1"
+        78          -- String, length next 1 byte
+          2a        -- String, length: 42
+            68747470733a2f2f6e7a63702e636f76696431392e6865616c74682e6e7a2f636f6e74657874732f7631 -- [1], "https://nzcp.covid19.health.nz/contexts/v1"
+      67            -- String, length: 7
+        76657273696f6e -- {Key:1}, "version"
+      65            -- String, length: 5
+        312e302e30  -- {Val:1}, "1.0.0"
+      64            -- String, length: 4
+        74797065    -- {Key:2}, "type"
+      82            -- {Val:2}, Array, 2 items
+        74          -- String, length: 20
+          56657269666961626c6543726564656e7469616c -- [0], "VerifiableCredential"
+        6f          -- String, length: 15
+          5075626c6963436f76696450617373 -- [1], "PublicCovidPass"
+      71            -- String, length: 17
+        63726564656e7469616c5375626a656374 -- {Key:3}, "credentialSubject"
+      a3            -- {Val:3}, Map, 3 pairs
+        69          -- String, length: 9
+          676976656e4e616d65 -- {Key:0}, "givenName"
+        64          -- String, length: 4
+          4a61636b  -- {Val:0}, "Jack"
+        6a          -- String, length: 10
+          66616d696c794e616d65 -- {Key:1}, "familyName"
+        67          -- String, length: 7
+          53706172726f77 -- {Val:1}, "Sparrow"
+        63          -- String, length: 3
+          646f62    -- {Key:2}, "dob"
+        6a          -- String, length: 10
+          313936302d30342d3136 -- {Val:2}, "1960-04-16"
+    07              -- {Key:4}, 7
+    50              -- Bytes, length: 16
+      60a4f54d4e304332be33ad78b1eafa4b -- {Val:4}, 60a4f54d4e304332be33ad78b1eafa4b
+0xa501781e6469643a7765623a6e7a63702e636f76696431392e6865616c74682e6e7a051a61819a0a041a7450400a627663a46840636f6e7465787482782668747470733a2f2f7777772e77332e6f72672f323031382f63726564656e7469616c732f7631782a68747470733a2f2f6e7a63702e636f76696431392e6865616c74682e6e7a2f636f6e74657874732f76316776657273696f6e65312e302e306474797065827456657269666961626c6543726564656e7469616c6f5075626c6963436f766964506173737163726564656e7469616c5375626a656374a369676976656e4e616d65644a61636b6a66616d696c794e616d656753706172726f7763646f626a313936302d30342d3136075060a4f54d4e304332be33ad78b1eafa4b

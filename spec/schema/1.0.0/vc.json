@@ -1,0 +1,81 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "NZ Covid Pass Verifiable Credential Claim",
+    "$comment": "Schema version 1.0.0",
+    "type": "object",
+    "required": [
+        "@context",
+        "type",
+        "version",
+        "credentialSubject"
+    ],
+    "properties": {
+        "@context": {
+            "title": "JSON-LD Context Processing Directive",
+            "type": "array",
+            "minItems": 1
+        },
+        "type": {
+            "title": "Credential Type",
+            "type": "array",
+            "const": [
+                "VerifiableCredential",
+                "PublicCovidPass"
+            ],
+            "minItems": 2,
+            "maxItems": 2
+        },
+        "version": {
+            "title": "Schema version",
+            "description": "Version of the schema, according to Semantic versioning (ISO, https://semver.org/ version 2.0.0 or newer)",
+            "type": "string",
+            "pattern": "^\\d+.\\d+.\\d+$",
+            "examples": [
+                "1.0.0"
+            ]
+        },
+        "credentialSubject": {
+            "description": "Credential Subject",
+            "$ref": "#/$defs/credentialSubject"
+        }
+    },
+    "$defs": {
+        "credentialSubject": {
+            "description": "Credential Subject definition for verifiable credential",
+            "required": [
+                "givenName",
+                "dob"
+            ],
+            "type": "object",
+            "properties": {
+                "givenName": {
+                    "title": "Given Name(s)",
+                    "description": "The given name(s) of the person addressed in the pass",
+                    "type": "string",
+                    "maxLength": 100,
+                    "examples": [
+                        "John"
+                    ]
+                },
+                "familyName": {
+                    "title": "Family Name(s)",
+                    "description": "The family name(s) of the person addressed in the pass",
+                    "type": "string",
+                    "maxLength": 100,
+                    "examples": [
+                        "Doe"
+                    ]
+                },
+                "dob": {
+                    "title": "Date of birth",
+                    "description": "Date of Birth of the person addressed in the pass. ISO 8601 date format(YYYY-MM-DD)",
+                    "type": "string",
+                    "format": "date",
+                    "examples": [
+                        "1979-04-14"
+                    ]
+                }
+            }
+        }
+    }
+}

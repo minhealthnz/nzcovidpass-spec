@@ -1,0 +1,24 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "version": "https://nzcp.covid19.health.nz#version",
+        "CovidPass": {
+            "@id": "https://nzcp.covid19.health.nz#PublicCovidPass",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "givenName": "https://schema.org/givenName",
+                "familyName": "https://schema.org/familyName",
+                "dob": {
+                    "@id": "http://schema.org/birthDate",
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                }
+            }
+        }
+    }
+}
