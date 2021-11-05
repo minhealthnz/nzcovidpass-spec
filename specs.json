@@ -4,6 +4,7 @@
     "specs": [
         {
             "title": "New Zealand Covid Pass Specification",
+            "logo": "https://www.health.govt.nz/sites/all/themes/mohpub_bootstrap/images/mohlogo.svg",
             "output_path": "./www",
             "spec_directory": "./spec",
             "markdown_paths": [
