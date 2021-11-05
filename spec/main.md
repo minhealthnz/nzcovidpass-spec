@@ -379,7 +379,7 @@ Mapping the `Decoded CWT payload` to JSON, substituting the numeric claim tags (
 [[insert: ./spec/examples/valid/nzcp.json]]
 ```
 
-Taking the value of the `iss` claim in the CWT payload and the `kid` value from the protected headers and resolving it to the issuers DID document as detailed in the [issuer identifier section](#issuer-identifier), yields the following JSON document. Located [here](./did.json).
+Taking the value of the `iss` claim in the CWT payload and the `kid` value from the protected headers and resolving it to the issuers DID document as detailed in the [issuer identifier section](#issuer-identifier), yields the following JSON document. Located [here](./.well-known/did.json).
 
 ```json
 [[insert: ./spec/examples/valid/did.json]]

@@ -4,7 +4,7 @@
   "scripts": {
     "spec": "npm run spec:update-example && node -e \"require('spec-up')({ nowatch: true })\"",
     "spec:edit": "npm run spec:update-example && node -e \"require('spec-up')()\"",
-    "spec:update-example": "mkdir -p www/ && cp spec/examples/valid/did.json www/did.json && cp -r spec/contexts www && cp -r spec/examples www"
+    "spec:update-example": "mkdir -p www/.well-known && cp spec/examples/valid/did.json www/.well-known/did.json && cp -r spec/contexts www && cp -r spec/examples www"
   },
   "devDependencies": {
     "spec-up": "0.10.3"
