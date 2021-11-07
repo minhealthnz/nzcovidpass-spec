@@ -25,7 +25,9 @@ This specification has been developed by the Ministry of Health as part of the r
 
 It is principally designed to provide a technical standard for creating verifiable proofs of a health status for New Zealand use, including proof of vaccination for COVID-19.
 
-The spec currently defines the following types of pass:
+*Note: It not include certificates used for international travel, which will instead initially follow the [EUDCC standards](https://github.com/eu-digital-green-certificates) developed by the European Union.*
+
+The NZ COVID Pass spec currently defines the following types:
 
 Pass Name                               | Purpose
 ----------------------------------------|--------------------------------------
