@@ -63,10 +63,12 @@ The specification contains the current [trusted issuers](https://nzcp.covid19.he
 
 ## Verifier Apps
 
-The Ministry of Health is building a free Verifier App to be made available on the App Store and Google Play. Anyone can download this and use it to scan and verify a pass, and no login or identity is required to be able to use the app. The source code for this app will also be published on GitHub, along with additional documentation for how it works.
+The Ministry of Health has built a free Verifier App that is available on the [App Store](https://apps.apple.com/nz/app/nz-pass-verifier/id1590019881) and [Google Play](https://play.google.com/store/apps/details?id=nz.govt.health.covidpassverifier). Anyone can download this and use it to scan and verify a pass, and no login or identity is required to be able to use the app. The source code for this app will also be published on GitHub, along with additional documentation for how it works.
 
 ### Third party verifier apps
 It is also possible for others to build their own verifier apps, to incorporate verification into their existing technology and business processes. The [specification](https://nzcp.covid19.health.nz) is intended to provide the necessary detail for implementing your own verifier app, including worked examples.
+
+There is also a community managed list of verifier technology available on [nz-covid-pass/validator-list](https://github.com/nz-covid-pass/validator-list). Please note the Ministry has not reviewed or endorsed any third party solutions, and can not provide any support for these solutions. If you choose to a third party verifier you will need to undertake your own evaluation.
 
 There are some considerations you should make when building your own verification apps:
 * Scanning the content of the QR code is the only way to confirm the pass has been issued by the Ministry of Health, and has not been tampered with. The details printed visually on the pass should not be trusted.
@@ -99,4 +101,10 @@ The QR code is assembled using existing open specifications.
 
 The specification has full examples of the QR code and a worked example for how to decode it in the [examples section](https://nzcp.covid19.health.nz/#examples).
 
+## Verifier use cases
 
+Below are some example workflows you may use when implementing a third party verifier app:
+
+![Small scale/in band verification](https://user-images.githubusercontent.com/93237519/142969929-f7c902e9-ff79-4f45-8cec-2d5ebf8d039b.png)
+
+![Large scale/out of band verification](https://user-images.githubusercontent.com/93237519/142969964-a2b78200-f8cf-44c9-ac6a-d88b838ea5e7.png)
