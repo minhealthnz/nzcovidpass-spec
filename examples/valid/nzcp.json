@@ -1,0 +1,22 @@
+{
+  "iss": "did:web:nzcp.covid19.health.nz",
+  "nbf": 1635883530,
+  "exp": 1951416330,
+  "jti": "urn:uuid:60a4f54d-4e30-4332-be33-ad78b1eafa4b",
+  "vc": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://nzcp.covid19.health.nz/contexts/v1"
+    ],
+    "version": "1.0.0",
+    "type": [
+      "VerifiableCredential",
+      "PublicCovidPass"
+    ],
+    "credentialSubject": {
+      "givenName": "Jack",
+      "familyName": "Sparrow",
+      "dob": "1960-04-16"
+    }
+  }
+}
